@@ -1,0 +1,22 @@
+$def with(datos_p)
+<a href="/productos"><h1>Eliminar Producto</h1></a>
+<hr>
+<form method="POST">
+    <label for="id_producto">Id</label>
+    <input type="text" readonly="true" value="$datos_p.id_producto" id="id_producto" name="id_producto">
+    <br>
+    <label for="nombre">Nombre: </label>
+    <input type="text" readonly="true" value="$datos_p.nombre" id="nombre" name="nombre">
+    <br>
+    <label for="marca">Marca: </label>
+    <input type="text" readonly="true" value="$datos_p.marca" id="marca" name="marca">
+    <br>
+    <label for="descripcion">Descripcion: </label>
+    <input type="text" readonly="true" value="$datos_p.descripcion" id="descripcion" name="descripcion">
+    <br>
+    <label for="cantidad">Cantidad: </label>
+    <input type="text" readonly="true" value="$datos_p.cantidad" id="cantidad" name="cantidad">
+    <br>
+    <hr>
+    <button type="submit" class="btn btn-primary">Eliminar</button>
+</form>

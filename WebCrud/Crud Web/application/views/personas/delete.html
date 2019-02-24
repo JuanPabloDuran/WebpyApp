@@ -1,0 +1,21 @@
+$def with(datos)
+<a href="/personas"><h1>Eliminar Cliente</h1></a>
+<hr>
+<form method="POST">
+    <label for="nombre">Nombre</label>
+    <input type="text" readonly="true" value="$datos.nombre" id="nombre" name="nombre">
+    <br>
+    <label for="apellido_pat">Apellido Paterno</label>
+    <input type="text" readonly="true" value="$datos.apellido_pat" id="ape_pat" name="apellido_pat">
+    <br>
+    <label for="apellido_mat">Apellido Materno</label>
+    <input type="text" readonly="true" value="$datos.apellido_mat" id="ape_mat" name="apellido_mat">
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" readonly="true" value="$datos.email" id="email" name="email">
+    <br>
+    <label for="edad">Edad:</label>
+    <input type="edad" readonly="true" value="$datos.edad" id="edad" name="edad">
+    <br>
+    <button type="submit" class="btn btn-primary">Eliminar</button>
+</form>
